@@ -1,12 +1,15 @@
 # Firewatch-Maps
 
-_Firewatch-Maps_ is a [Leaflet](https://leafletjs.com/) map browser displaying the aligned in-game maps from [_Firewatch_](http://www.firewatchgame.com/).
+_Firewatch-Maps_ is a Javascript (Leaflet) mapping application displaying the aligned in-game maps from [_Firewatch_](http://www.firewatchgame.com/).
+
+![firewatch-reddit30](https://github.com/user-attachments/assets/cbf841b2-487d-43cc-bb8a-9fd809f830ae)
 
 ## Sources
 
 - The in-game **textures** of the maps were retrieved with [Perfare](https://www.perfare.net/)’s [AssetStudio](https://github.com/Perfare/AssetStudio) and converted to .webp.
 - **Alignment** was done in Photoshop, with the smallest map ("map_cache_wirehike" in cache box 302) as the base (1:1 pixels), and the other maps scaled and translated around that.
 - Map **origin** (0,0) is the center of the marker for "Two Forks Lookout". Note that Leaflet.js doesn’t use x and y coordinates as such, but [Northing and Easting](https://leafletjs.com/examples/crs-simple/crs-simple.html) (-y, x).
+
 
 ## Contributing / To Do
 
@@ -19,3 +22,16 @@ or
 - align the marker icons and path lines etc. to that,
 - probably export a single .webp as overlay, and
 - add that overlay to the map.
+
+## Credits
+
+| Work | Name |
+| ---- | ---- |
+| Visual Direction, 2D Art | [Olly Moss](https://ollymoss.com/) |
+| Creative Director | [Sean Vanaman](https://www.seanvanaman.com/) |
+| UI Design | [Jake Rodkin](https://rodkin.online/) |
+| World Design | [Jane Ng](https://janeng.com/) |
+
+[Original-size game map available on Campo Santos’ blog](https://blog.camposanto.com/post/140041752129/downloadable-printable-firewatch-maps-for-you-a).
+
+[Leaflet](https://leafletjs.com/) originally by [Volodymyr Agafonkin](https://agafonkin.com/) and developed by [many contributors](https://github.com/Leaflet/Leaflet/graphs/contributors).
