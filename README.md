@@ -2,7 +2,9 @@
 
 _Firewatch-Maps_ is a Javascript (Leaflet) mapping application displaying the aligned in-game maps from [_Firewatch_](http://www.firewatchgame.com/).
 
-![firewatch-reddit30](https://github.com/user-attachments/assets/cbf841b2-487d-43cc-bb8a-9fd809f830ae)
+Live at [https://oohgae.github.io/Firewatch-Maps/](https://oohgae.github.io/Firewatch-Maps/) (use the layer panel in the upper right to switch on or off any map)
+
+[![firewatch-reddit30](https://github.com/user-attachments/assets/cbf841b2-487d-43cc-bb8a-9fd809f830ae)](https://oohgae.github.io/Firewatch-Maps/)
 
 ## Sources
 
