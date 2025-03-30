@@ -11,7 +11,13 @@ _Firewatch-Maps_ is a Javascript (Leaflet) mapping application displaying the al
 - Map **origin** (0,0) is the center of the marker for "Two Forks Lookout". Note that Leaflet.js doesn’t use x and y coordinates as such, but [Northing and Easting](https://leafletjs.com/examples/crs-simple/crs-simple.html) (-y, x).
 
 
-## Contributing / To Do
+## Contributing
+
+### Bugs
+
+Here on GitHub Pages, a scale bar is shown which I thought I had switched off … Since all the maps use a few scale bar graphics over and over _but at different scales_, the maps themselves don’t provide any reference. (I’m planning to look into the terrain meshes to figure out a "real" scale …)
+
+### To Do
 
 Henry’s annotations are present as .pngs, but not aligned to the map (yet). Same for the accompanying keys.
 I was planning to either 
