@@ -19,16 +19,20 @@ Live at [https://oohgae.github.io/Firewatch-Maps/](https://oohgae.github.io/Fire
 
 Here on GitHub Pages, a scale bar is shown which I thought I had switched off … Since all the maps use a few scale bar graphics over and over _but at different scales_, the maps themselves don’t provide any reference. (I’m planning to look into the terrain meshes to figure out a "real" scale …)
 
-### To Do
+### Done
 
 Henry’s annotations are present as .pngs, but not aligned to the map (yet). Same for the accompanying keys.
-I was planning to either 
-- try with [RenderDoc](https://renderdoc.org/) to grab the map texture with annotations before it was put on the map mesh,
-or
-- photo-stitch a couple of screenshots to an annotated map,
-- warp the result to the original main map,
+- try with [RenderDoc](https://renderdoc.org/) to grab the map texture with annotations before it was put on the map mesh?
+- didn’t work, but resulted in a flat, annotated map version
+- used RenderDoc annotated map as template to align game files .png texture sprites
+~~- photo-stitch a couple of screenshots to an annotated map,~~
+~~- warp the result to the original main map,~~
 - align the marker icons and path lines etc. to that,
-- probably export a single .webp as overlay, and
+
+### To Do
+
+- need to check whether Henry’s annotations are complete, then
+- export a single .webp as overlay, and
 - add that overlay to the map.
 
 ## Credits
