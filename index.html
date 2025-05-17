@@ -61,17 +61,7 @@
 </div>
 
 <script>
-//////////// BASE MAPS ////////////
-const baseMaps = {
-	'Firefinder (Two Forks)':	FireFinderMap
-/*
-,
-	'“Satellite”':			WorldTopView,
- 	'“Terrain”':			WorldHeightMap
-*/
-};
-
-//////////// OVERLAYS ////////////
+//////////// LAYER DEFINITIONS ////////////
 
 const map_overview 		= L.imageOverlay(	'map_overview.webp',			[[-2997, -5909], [ 6537, 3625]]  );
 const map_overview_clean	= L.imageOverlay(	'Firewatch-World-Map-Clean.webp',	[[-2997, -5909], [ 6537, 3625]]  );
@@ -93,6 +83,16 @@ const map_cache_teencamp 	= L.imageOverlay(	'map_cache_teencamp.webp',		[[-3858,
 const map_cache_towerhub 	= L.imageOverlay(	'map_cache_towerhub.webp',		[[-1211, -3577], [ 1904, -462]]  );
 const map_cache_wirehike 	= L.imageOverlay(	'map_cache_wirehike.webp',		[[ 3295,  -765], [ 5343, 1283]]  );
 const Doc_BrianDndMap 		= L.imageOverlay(	'Doc_BrianDndMap.webp',			[[-4570, -6072], [ 1970, 2447]]  );
+
+//////////// DECLARE BASE MAPS ////////////
+const baseMaps = {
+	'Firefinder (Two Forks)':	FireFinderMap
+/*
+,
+	'“Satellite”':			WorldTopView,
+ 	'“Terrain”':			WorldHeightMap
+*/
+};
 
 //////////// OVERLAY LAYER CONTROLS (ordered!) ////////////
 const overlayMaps = {
