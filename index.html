@@ -61,17 +61,28 @@
 </div>
 
 <script>
-// 1. OVERLAYS
+//////////// BASE MAPS ////////////
+const baseMaps = {
+	'Firefinder (Two Forks)':	FireFinderMap
+/*
+,
+	'“Satellite”':			WorldTopView,
+ 	'“Terrain”':			WorldHeightMap
+*/
+};
+
+//////////// OVERLAYS ////////////
+
 const map_overview 		= L.imageOverlay('map_overview.webp',		[[-2997, -5909], [ 6537, 3625]]  );
 const FireFinderMap 		= L.imageOverlay('FireFinderMap.webp',		[[-5796, -5767], [ 5742, 5771]]  );
 const FireFinderMapBurned 	= L.imageOverlay('FireFinderMapBurned.webp',    [[-3170, -5804], [ 5617, 2983]]  );
 const FirefinderMapDelilah 	= L.imageOverlay('FirefinderMapDelilah.webp',   [ [1977, -5739], [13448, 5732]]  );
 const foldedmap2 		= L.imageOverlay('foldedmap2.webp',		[[-3858, -5325], [ -832,-2299]]  );
 
-	// Henry_annotations with blend-multiply class
+// Henry_annotations with blend-multiply class
 const Henry_annotations 	= L.imageOverlay('Henry_annotations.webp',	[[-2997, -5909], [ 6537, 3625]],    { className: 'blend-multiply' }  );
 
-// cache layers (in desired order)
+// caches (in desired order)
 const map_cache_backcountry 	= L.imageOverlay('map_cache_backcountry.webp',	[[ 1499, -4120], [ 5205, -414]]  );
 const map_cache_cave 		= L.imageOverlay('map_cache_cave.webp',		[[  338,  -844], [ 3622, 2440]]  );
 const map_cache_lakecreek 	= L.imageOverlay('map_cache_lakecreek.webp',	[[ -609, -5495], [ 3347,-1539]]  );
@@ -82,30 +93,26 @@ const map_cache_towerhub 	= L.imageOverlay('map_cache_towerhub.webp',	[[-1211, -
 const map_cache_wirehike 	= L.imageOverlay('map_cache_wirehike.webp',	[[ 3295,  -765], [ 5343, 1283]]  );
 const Doc_BrianDndMap 		= L.imageOverlay('Doc_BrianDndMap.webp',	[[-4570, -6072], [ 1970, 2447]]  );
 
-// 2. BASE MAP(S)
-const baseMaps = {
-	'Firefinder (Two Forks)': FireFinderMap
-};
-
-// 3. OVERLAY CONTROLS
+//////////// OVERLAY LAYER CONTROLS (ordered!) ////////////
 const overlayMaps = {
-    'Firefinder (burned)':          FireFinderMapBurned,
-    'Firefinder (Delilah)':         FirefinderMapDelilah,
-    'Henry’s map':                  map_overview,
-    '“folded map”':                 foldedmap2,
-    'Cache 309 “Teen Camp”':        map_cache_teencamp,
-    'Cache 308 “Ruby River”':       map_cache_rubyriver,
-    'Cache 307 [as 308] “Sno Bros”': map_cache_snobros,
-    'Cache 306 “tower hub”':        map_cache_towerhub,
-    'Cache 305 “Lake Creek”':       map_cache_lakecreek,
-    'Cache 303 “Cave”':             map_cache_cave,
-    'Cache 302 “wire hike”':        map_cache_wirehike,
-    'Cache 241 “backcountry”':      map_cache_backcountry,
-    'Brian’s DnD map':              Doc_BrianDndMap,
-    'Henry’s annotations [work in progress!]':          Henry_annotations
+    'Firefinder (burned)':		FireFinderMapBurned,
+    'Firefinder (Delilah)':		FirefinderMapDelilah,
+    'Henry’s map':			map_overview,
+    '“folded map”':			foldedmap2,
+    'Cache 309 “Teen Camp”':		map_cache_teencamp,
+    'Cache 308 “Ruby River”':		map_cache_rubyriver,
+    'Cache 307 [as 308] “Sno Bros”':	map_cache_snobros,
+    'Cache 306 “tower hub”':		map_cache_towerhub,
+    'Cache 305 “Lake Creek”':		map_cache_lakecreek,
+    'Cache 303 “Cave”':			map_cache_cave,
+    'Cache 302 “wire hike”':		map_cache_wirehike,
+    'Cache 241 “backcountry”':		map_cache_backcountry,
+	
+    'Henry’s annotations [work in progress!]':          Henry_annotations,
+    'Brian’s DnD map':			Doc_BrianDndMap,
   };
 
-// 4. MAP INITIALIZATION
+//////////// MAP SETUP ////////////
 const map = L.map('map', {
     layers:        [FireFinderMap, map_overview],
     crs:           L.CRS.Simple,
@@ -116,15 +123,21 @@ const map = L.map('map', {
     attributionControl: false
 });
 
-// 5. VIEW & CONTROLS
+//////////// MAIN ////////////
+
+// view //
 map.fitBounds([[-3000, -3000], [3000, 3000]]);
+
+// scale bar //
 L.control.scale({
     metric:    true,
     imperial:  true,
     maxWidth:  320
 }).addTo(map);
 
+// add layers to map //
 L.control.layers(baseMaps, overlayMaps).addTo(map);
+
 </script>
 
 </body>
