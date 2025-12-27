@@ -1,10 +1,10 @@
 # Reconstructed Heightmap from Game Files
 
-TIFF, ZIP-compressed
-grayscale, 16 bits
-4096 px × 6144 px
-vertical scale 200 m (black = 0 m, white = 200 m)
-terrain size 989 m × 1477 m (≈ 24 cm/px)
+TIFF, ZIP-compressed  
+grayscale, 16 bits  
+4096 px × 6144 px  
+vertical scale 200 m (black = 0 m, white = 200 m)  
+terrain size 989 m × 1477 m (≈ 24 cm/px)  
 
 - Thoroughfare Butte (the end scene) is not continuous with the rest of the world; its sector is top left.
 - Below that is the heightmap for the cave (floor, I assume).
