@@ -12,6 +12,10 @@ Live at [https://oohgae.github.io/Firewatch-Maps/](https://oohgae.github.io/Fire
 - **Alignment** was done in Photoshop, with the smallest map ("map_cache_wirehike" in cache box 302) as the base (1:1 pixels), and the other maps scaled and translated around that.
 - Map **origin** (0,0) is the center of the marker for "Two Forks Lookout". Note that Leaflet.js doesn’t use x and y coordinates as such, but [Northing and Easting](https://leafletjs.com/examples/crs-simple/crs-simple.html) (-y, x).
 
+### Heightmap
+
+- if you’re (like [u/HorseInevitable6208](https://www.reddit.com/r/Firewatch/comments/1jy3gzn/might_be_a_big_ask/) interested in the terrain, you can find my [reconstructed heightmap here](https://github.com/OohGae/Firewatch-Maps/tree/main/heightmap)
+
 
 ## Contributing
 
