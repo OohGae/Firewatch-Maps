@@ -1,5 +1,6 @@
 # Reconstructed Heightmap from Game Files
 
+[Heightmap reconstruct - Map Firewatch.tif](https://github.com/OohGae/Firewatch-Maps/blob/main/heightmap/Heightmap%20reconstruct%20-%20Map%20Firewatch.tif)  
 TIFF, ZIP-compressed  
 grayscale, 16 bits  
 4096 px × 6144 px  
